@@ -3,4 +3,82 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', Arial;
+    width: 100%;
+}
+
+body {
+}
+
+normal {
+    font-weight: 300;
+}
+
+h1 {
+    color: #85d1f8;
+    font-weight: 300;
+}
+
+h2 {
+    color: #f0576c;
+    font-weight: 300;
+}
+
+p {
+    color: #444;
+    font-weight: 300;
+}
+
+a {
+    color: #f0576c;
+    transition: 0.6s ease;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #85d1f8;
+    transition: 0.6s ease;
+}
+
+#nav {
+    width: 100%;
+    background-color: #fafafb;
+    color: #85d1f8;
+    height: 80px;
+    line-height: 80px;
+}
+
+#logo {
+    float: left;
+    padding-left: 60px;
+    color: #f0576c;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#navLinks {
+    float: right;
+    padding-right: 60px;
+    word-spacing: 20px;
+}
+
+#navLinks a {
+    color: #85d1f8;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+
+#navLinks a:hover {
+    color: #f0576c;
+    transition: 0.6s ease;
+}
+
+#content {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+}
+
+.typed {
+    text-align: center;
 }

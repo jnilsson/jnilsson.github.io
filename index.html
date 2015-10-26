@@ -4,8 +4,34 @@
         <title>JNilsson</title>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
         <link href="css/style.css" rel="stylesheet" type="text/css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/typed.min.js"></script>
+            <script>
+              $(function(){
+                  $(".typed").typed({
+                    strings: ["Hallo, ich bin Johannes Nilsson.", "Diese Seite befindet sich im Aufbau."],
+                    typeSpeed: 40,
+                    showCursor: false
+                  });
+              });
+            </script>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <div id="nav">
+            
+            <a href="index.html" id="logo"> JN<normal>ilsson</normal> </a>
+            
+            <div id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="impressum.html">Impressum</a>
+            </div>
+            
+        </div>
+        
+        <div id="content">
+        
+            <h1 class="typed"></h1>
+        
+        </div>
     </body>
 </html>
