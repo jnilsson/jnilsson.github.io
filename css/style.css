@@ -9,11 +9,25 @@ body {
 
 body {
     background-color: #fff;
+    
+}
+
+#wrapper {
+    width: calc(100% - 32px);
+    height: 100%;
     border: 16px solid #85d1f8;
     border-top: 0px;
-    width: calc(100% - 32px);
-    height: calc(100% - 16px);
-    overflow: hidden;
+    border-bottom: 0px;
+    
+    position: fixed;
+}
+
+#footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    height: 16px;
+    background-color: #85d1f8;
 }
 
 normal {
@@ -65,6 +79,8 @@ a:hover {
     color: #fafafb;
     height: 100px;
     line-height: 100px;
+    position: fixed;
+    top: 0;
 }
 
 #logo {
@@ -117,9 +133,16 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 960px) {
+    #content {
+        padding-left: 20px;
+    }
+}
+
 #content {
-    padding-top: 100px;
+    padding-top: 160px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .typed {
