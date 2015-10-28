@@ -4,10 +4,16 @@ body {
     padding: 0;
     font-family: 'Roboto', Arial;
     width: 100%;
+    height: 100%;
 }
 
 body {
-    background-color: #fafafb;
+    background-color: #fff;
+    border: 16px solid #85d1f8;
+    border-top: 0px;
+    width: calc(100% - 32px);
+    height: calc(100% - 16px);
+    overflow: hidden;
 }
 
 normal {
@@ -64,7 +70,7 @@ a:hover {
 #logo {
     float: left;
     padding-left: 60px;
-    color: #fafafb;
+    color: #fff;
     font-size: 30px;
     text-decoration: none;
 }
@@ -76,7 +82,7 @@ a:hover {
 }
 
 #navLinks a {
-    color: #fafafb;
+    color: #fff;
     font-weight: 300;
     font-size: 20px;
     text-decoration: none;
@@ -119,4 +125,37 @@ a:hover {
 .typed {
     text-align: center;
     line-height: 130px;   
+}
+
+
+
+/* Projects */
+.project {
+    margin-bottom: 60px;
+    min-height: 200px;
+}
+
+.projectText {
+    width: calc(60% - 20px);
+    padding-left: 20px;
+}
+
+.projectImage {
+    width: 40%;
+    
+    background-color: aquamarine;
+}
+
+.project img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
 }
