@@ -152,6 +152,7 @@ a:hover {
     margin-top: -200px;/* half of #content height*/
     left: 0;
     width: calc(100% - 32px);
+    padding-left: 20px;
 }
 
 .welcome {
