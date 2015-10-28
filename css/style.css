@@ -135,7 +135,6 @@ a:hover {
 
 @media screen and (max-width: 960px) {
     #content {
-        padding-left: 20px;
     }
 }
 
@@ -143,6 +142,8 @@ a:hover {
     padding-top: 160px;
     margin: 0 auto;
     margin-bottom: 40px;
+    
+        padding-left: 20px;
 }
 
 .typed {
