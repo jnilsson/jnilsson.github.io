@@ -1,8 +1,10 @@
 html,
 body {
-  background-color: #4AB19A;
+  background: #00C9FF;
+  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);
+  background: linear-gradient(to right, #92FE9D, #00C9FF);
   color: #2f3640;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Rubik', sans-serif;
   height: 100%;
   width: 100%;
 }
