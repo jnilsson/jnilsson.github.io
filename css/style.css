@@ -70,6 +70,7 @@ a:hover {
 
 #title a {
   color: #fff;
+  font-family: 'Major Mono Display', monospace;
 }
 
 #links {
@@ -250,78 +251,4 @@ a:hover {
         border-radius: 100%;
     }
 
-}
-
-
-
-
-.bar {
-  width: 100px;
-  height: 50px;
-  background-color: rgba(255, 255, 255, 0.7);
-  margin-bottom: 10px;
-  animation-duration: 10s;
-  &.bar_0 {
-    width: 30%;
-    animation-name: bar_animate_0;
-  }
-  &.bar_1 {
-    width: 50%;
-    animation-name: bar_animate_1;
-  }
-  &.bar_2 {
-    width: 60%;
-    animation-name: bar_animate_2;
-  }
-  &.bar_3 {
-    width: 70%;
-    animation-name: bar_animate_3;
-  }
-  &.bar_4 {
-    width: 75%;
-    animation-name: bar_animate_4;
-  }
-  &.bar_5 {
-    width: 100%;
-    animation-name: bar_animate_5;
-  }
-}
-
-$percentages: (30, 50, 60, 65, 75, 100);
-$factor: 20;
-$interval: 0.5;
-$previousAnimation: 0;
-@for $i from 1 through 6 {
-  @keyframes bar_animate_#{$i - 1} {
-    @if $i > 2
-     {
-      $previousAnimation: $previousAnimation + ($factor * nth($percentages, $i - 1) / 100) + $interval;
-      0%, #{($previousAnimation)}% {
-      transform: scaleX(0);
-      transform-origin: left;
-     }
-    }
-    @else if $i == 2{
-      $previousAnimation: $previousAnimation + ($factor * nth($percentages, $i - 1) / 100) + $interval;
-      0%, #{$previousAnimation }%
-      {
-      transform: scaleX(0);
-      transform-origin: left;
-      }
-    }
-    @else
-    {
-      0%
-      {
-      transform: scaleX(0);
-      transform-origin: left;
-      }
-    }
-
-    #{$previousAnimation + ($factor * nth($percentages, $i) / 100)}%, 100%
-      {
-      transform: scaleX(1);
-      transform-origin: left;
-      }
-  }
 }
