@@ -1,10 +1,10 @@
 html,
 body {
-  background: #00C9FF;
-  background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);
-  background: linear-gradient(to right, #92FE9D, #00C9FF);
+  background: #bdc3c7;
+  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+  background: linear-gradient(to right, #2c3e50, #bdc3c7);
   color: #2f3640;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Kulim Park', sans-serif;
   height: 100%;
   width: 100%;
 }
@@ -16,12 +16,12 @@ h1 {
 
 a {
   text-decoration: none;
-  color: #2f3640;
+  color: #a4b0be;
 }
 
 a:hover {
   text-decoration: none;
-  color: #2f3640;
+  color: #a4b0be;
 }
 
 #textHero {
@@ -29,7 +29,7 @@ a:hover {
 }
 
 #textHero.work {
-  border-left: 1px dotted #2f3640;
+  border-left: 1px dotted #a4b0be;
   padding-left: 20.5px;
 }
 
@@ -40,7 +40,7 @@ a:hover {
 }
 
 #textHero h1 {
-  color: #2f3640;
+  color: #fff;
   padding-bottom: 5px;
 }
 
@@ -48,7 +48,7 @@ a:hover {
   font-weight: 600;
   font-size: 14px;
   line-height: 18px;
-  color: #2f3640;
+  color: #a4b0be;
 }
 
 #nav {
@@ -68,6 +68,10 @@ a:hover {
   font-size: 30px;
 }
 
+#title a {
+  color: #fff;
+}
+
 #links {
   position: absolute;
   right: 80px;
@@ -84,6 +88,7 @@ a:hover {
 
 #links a:hover {
   color: #fff;
+  transition: 0.3s all ease;
 }
 
 .box {
@@ -114,6 +119,13 @@ a:hover {
   padding-right: 30px;
   color: #fff;
   cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+#linkDrawer:hover {
+  background-color: rgba(255,255,255,0.3);
+  color: #2f3640;
+  transition: 0.3s all ease;
 }
 
 .material-icons {
