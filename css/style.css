@@ -1,36 +1,26 @@
 html,
 body {
-  background: #bdc3c7;
-  background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
-  background: linear-gradient(to right, #2c3e50, #bdc3c7);
-  color: #2f3640;
-  font-family: 'Kulim Park', sans-serif;
+  background-color: #FBAB7E;
+  background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+  color: #333;
+  font-family: 'Poppins', sans-serif;
   height: 100%;
   width: 100%;
 }
 
 h1 {
-  font-weight: 800;
+  font-weight: 900;
   font-size: 30px;
 }
 
 a {
   text-decoration: none;
-  color: #a4b0be;
+  color: #333;
 }
 
 a:hover {
   text-decoration: none;
-  color: #a4b0be;
-}
-
-.doodle {
-  position: fixed;
-  z-index: 1000;
-  width: 50%;
-  height: auto;
-  bottom: 0px;
-  right: -40px;
+  color: #333;
 }
 
 #textHero {
@@ -38,26 +28,26 @@ a:hover {
 }
 
 #textHero.work {
-  border-left: 1px dotted #a4b0be;
+  border-left: 1px dotted #555;
   padding-left: 20.5px;
 }
 
 #textHero li {
   list-style-type: disc;
-  color: #fff;
+  color: #333;
   font-size: 30px;
 }
 
 #textHero h1 {
-  color: #fff;
+  color: #333;
   padding-bottom: 5px;
 }
 
 #textHero p {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 14px;
   line-height: 18px;
-  color: #a4b0be;
+  color: #333;
 }
 
 #nav {
@@ -73,31 +63,35 @@ a:hover {
 }
 
 #title {
-  font-weight: 400;
+  font-weight: 200;
   font-size: 30px;
 }
 
 #title a {
-  color: #fff;
-  font-family: 'Major Mono Display', monospace;
+  color: #333;
+}
+
+#title b {
+  font-weight: bold;
 }
 
 #links {
   position: absolute;
   right: 80px;
   word-spacing: 20px;
+  font-size: 14px;
 }
 
 #links a {
-  color: #2f3640;
+  color: #333;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: 0.3s all ease;
 }
 
 #links a:hover {
-  color: #fff;
+  color: #555;
   transition: 0.3s all ease;
 }
 
@@ -111,6 +105,50 @@ a:hover {
   top: 0px;
 }
 
+@keyframes skill-html {
+  from {
+    width: 100px;
+  }
+
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes skill-scss {
+  from {
+    width: 100px;
+  }
+
+  to {
+    width: 350px;
+  }
+}
+
+.skill {
+  animation: forwards;
+  animation-duration: 2s;
+  background-color: #00DE9B;
+  background-color: rgba(0,222,155,0.3);
+  height: 40px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: #fff;
+  transition: 0.3s all ease;
+  margin-bottom: 10px;
+}
+
+.skill-html {
+  animation-name: skill-html;
+}
+
+.skill-scss {
+  animation-name: skill-scss;
+}
+
 .box--bottom {
   align-items: flex-end;
 }
@@ -120,26 +158,33 @@ a:hover {
 }
 
 #linkDrawer {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(255,255,255,0.3);
   height: 40px;
   border-radius: 30px;
   margin-bottom: 40px;
   display: flex;
   align-items: center;
   padding-right: 30px;
-  color: #fff;
   cursor: pointer;
   transition: 0.3s all ease;
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 #linkDrawer:hover {
-  background-color: rgba(255,255,255,0.3);
-  color: #2f3640;
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  transition: 0.3s all ease;
+}
+
+#linkDrawer:hover .material-icons {
+  color: #fff;
   transition: 0.3s all ease;
 }
 
 .material-icons {
-  color: #fff;
+  color: #333;
   margin-left: 30px;
 }
 
