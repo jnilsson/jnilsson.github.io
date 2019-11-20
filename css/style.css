@@ -46,7 +46,7 @@ a:hover {
 
 #textHero p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 18px;
   color: #333;
 }
@@ -83,8 +83,8 @@ a:hover {
 #links {
   position: absolute;
   right: 80px;
-  word-spacing: 20px;
-  font-size: 14px;
+  word-spacing: 16px;
+  font-size: 16px;
 }
 
 #links a {
@@ -112,21 +112,51 @@ a:hover {
 
 @keyframes skill-html {
   from {
-    width: 100px;
+    width: 0px;
   }
 
   to {
-    width: 400px;
+    width: 300px;
   }
 }
 
 @keyframes skill-scss {
   from {
-    width: 100px;
+    width: 0px;
   }
 
   to {
-    width: 350px;
+    width: 250px;
+  }
+}
+
+@keyframes skill-php {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 200px;
+  }
+}
+
+@keyframes skill-js {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 150px;
+  }
+}
+
+@keyframes skill-ts {
+  from {
+    width: 0px;
+  }
+
+  to {
+    width: 100px;
   }
 }
 
@@ -134,16 +164,17 @@ a:hover {
   animation: forwards;
   animation-duration: 2s;
   background-color: #00DE9B;
-  background-color: rgba(0,222,155,0.3);
+  background-color: rgba(255,255,255,0.3);
   height: 40px;
   border-radius: 30px;
   display: flex;
   align-items: center;
   padding-right: 30px;
   padding-left: 30px;
-  color: #fff;
+  color: #333;
   transition: 0.3s all ease;
   margin-bottom: 10px;
+  font-weight: 800;
 }
 
 .skill-html {
@@ -152,6 +183,18 @@ a:hover {
 
 .skill-scss {
   animation-name: skill-scss;
+}
+
+.skill-php {
+  animation-name: skill-php;
+}
+
+.skill-js {
+  animation-name: skill-js;
+}
+
+.skill-ts {
+  animation-name: skill-ts;
 }
 
 .box--bottom {
@@ -173,7 +216,7 @@ a:hover {
   cursor: pointer;
   transition: 0.3s all ease;
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
 }
 
@@ -305,10 +348,6 @@ a:hover {
   #links {
     left: 20px;
     top: 80px;
-  }
-
-  #links a {
-    color: #fff;
   }
 
   .box {
