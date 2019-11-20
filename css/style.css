@@ -6,7 +6,7 @@ body {
   font-family: 'Poppins', sans-serif;
   height: 100%;
   width: 100%;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
 h1 {
@@ -49,6 +49,10 @@ a:hover {
   font-size: 14px;
   line-height: 18px;
   color: #333;
+}
+
+#textHero b {
+  font-weight: 900;
 }
 
 #nav {
