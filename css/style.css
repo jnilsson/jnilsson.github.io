@@ -112,6 +112,14 @@ a:hover {
   top: 0px;
 }
 
+.box--bottom {
+  align-items: flex-end;
+}
+
+.box--center {
+  align-items: center;
+}
+
 #linkDrawer {
   background-color: rgba(255,255,255,0.3);
   height: 40px;
