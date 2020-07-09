@@ -190,6 +190,10 @@ function getMousePosition(canvas, event) {
 
   // Check if it's the first or second click
   if (firstClick == true) {
+    ctx.strokeStyle = "rgba(255, 255, 255, 0.3)";
+    ctx.lineWidth = 6;
+    ctx.strokeRect(width * (column - 1) + 3, height * (row - 1) + 3.5, width - 6, height - 6.5);
+
     firstClick = false;
     color1 = hex;
     column1 = column;
